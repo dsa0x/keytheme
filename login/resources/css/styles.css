@@ -1,0 +1,244 @@
+body {
+    /*background-color: rgb(63,81,181);*/
+    background-image: url('../img/background.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: sans-serif;
+    text-shadow: 0px 0px 10px #000;
+    margin: 0px;
+}
+
+body {
+    /*background-color: rgb(63,81,181);*/
+    background-image: url('../img/background.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: sans-serif;
+    /*text-shadow: 0px 0px 10px #000;*/
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #fff;
+}
+
+/* Change content to change the title of the page*/
+div#kc-header::before {
+    padding-top: 3px;
+    content: url('../img/mhh-logo.png');
+    position: absolute;
+    left: 0;
+    transform: translateX(10%);
+}
+
+div#kc-header::after {
+    padding-top: 3px;
+    content: 'Login';
+    color: #525151;
+    z-index: 10000;
+    font-size: 30px;
+    background: none;
+    position: absolute;
+    right: 0;
+    transform: translate(-20px, 10px);
+}
+
+#kc-page-title {
+    text-align: center;
+    display: none;
+}
+
+div#kc-info {
+}
+
+/*title banner size and colour background-color: rgb(40,53,147);*/
+div#kc-header {
+    position: absolute;
+    left: 0;
+    width:100%;
+    padding: 1rem 0;
+    background: #fff;
+    padding-bottom: 5rem;
+}
+
+div#kc-content {
+    /*position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 100%;
+    margin-left: -44%;*/
+}
+
+div#kc-form {
+
+}
+/* label change Username, Password text*/
+div#kc-form label {
+    color: rgba(255, 255, 255, 1) !important;
+    display: block;
+    font-size: 20px;
+}
+/**/
+div#kc-form-login {
+    text-align: center;
+}
+
+div#info-area {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-top: 45px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    width: 99%;
+}
+
+div#info-area p {
+    margin-right: 30px;
+    display: inline;
+    text-shadow: none;
+    font-size: 20px;
+}
+
+form#kc-form-login {
+    width: 450px;
+    margin-top: 8rem;
+}
+
+/*fields*/
+input[type=text], input[type=password] {
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 12px;
+    width: 95%;
+    border: solid 2px transparent;
+    outline: none;
+}
+
+input[type=text]:hover, input[type=password]:hover {
+    border: solid 2px black;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    border: solid 2px #ed1b2e;
+}
+/*button*/
+input[type=submit] {
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(237, 27, 46, 1);
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+    color: rgba(0,0,0,0.6);
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    padding: 15px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: rgb(221,17,36);
+}
+
+div#kc-form-options div {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+div#kc-form-options div label {
+    font-size: 20px;
+}
+
+div#kc-feedback {
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+div#kc-feedback-wrapper {
+    padding: 1em;
+}
+
+div.feedback-success {
+    background-color: rgba(155,155,255,0.1);
+}
+
+div.feedback-warning {
+    background-color: rgba(255,175,0,0.1);
+}
+
+div.feedback-error {
+    background-color: rgba(255,0,0,0.1);
+}
+
+div#kc-header-wrapper {
+    display: none;
+}
+
+div#kc-registration {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    margin-top: 2em;
+}
+
+div#social-login {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    float: right;
+    width: 150px;
+    padding: 20px 0 200px 40px;
+}
+
+div.social-login span {
+    display: none;
+}
+
+div#kc-social-providers ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div#kc-social-providers ul li {
+    margin-bottom: 20px;
+}
+
+div#kc-social-providers ul li span {
+    display: inline;
+    width: 100px;
+}
+
+a.zocial {
+    border: none;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0.1)) !important;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0.1)) !important;
+    background: -ms-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0.1)) !important;
+    background: -o-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0.1)) !important;
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+    color: rgba(0,0,0,0.6);
+    width: 130px;
+    text-shadow: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
