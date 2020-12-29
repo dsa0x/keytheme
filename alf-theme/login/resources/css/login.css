@@ -50,7 +50,7 @@ body {
   letter-spacing: -0.4px;
   text-align: center;
   color: #ed1b2e;
-  margin-left: 32px;
+  margin-left: 64px;
   margin-top: 40px;
 }
 .login-content .box .form {
@@ -74,6 +74,11 @@ body {
   outline: none;
   background-color: #fff;
 }
+.login-content .box input[type='text']:hover,
+.login-content .box input[type='password']:hover {
+  border-bottom: 2px solid black;
+}
+
 .login-content .box input[type='text']:focus,
 .login-content .box input[type='password']:focus {
   border-bottom: 2px solid #ed1b2e;
@@ -123,12 +128,15 @@ body {
   position: relative;
   top: 50px;
 }
+.control-label {
+  font-size: 16px;
+}
 .message-text {
   width: 322px;
   height: 22px;
   opacity: 0.87;
   font-family: Muli;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -142,6 +150,7 @@ body {
   left: 64px;
   display: inline-flex;
   align-items: center;
+  padding: 1rem 0;
 }
 .identity-providers {
   width: 270px;
@@ -185,17 +194,19 @@ body {
   margin-left: 30px;
 }
 
-.kc-info-message p {
+form#kc-passwd-update-form,
+form#kc-update-profile-form {
+  padding-left: 64px;
+}
+
+#kc-info-message a,
+p {
   font-size: 20px;
   padding: 1rem;
 }
 
-.instruction {
-  font-size: 20px;
-  padding: 1rem;
-}
-
-form#kc-passwd-update-form input {
+form#kc-passwd-update-form input,
+form#kc-update-profile-form input {
   width: 320px;
   height: 24px;
   font-family: Muli;
@@ -212,16 +223,27 @@ form#kc-passwd-update-form input {
   background-color: #fff;
 }
 
+form#kc-passwd-update-form input[type='text']:hover,
+form#kc-passwd-update-form input[type='password']:hover,
+form#kc-update-profile-form input[type='text']:hover,
+form#kc-update-profile-form input[type='password']:hover {
+  border-bottom: 2px solid black;
+}
 form#kc-passwd-update-form input[type='text']:focus,
-form#kc-passwd-update-form input[type='password']:focus {
+form#kc-passwd-update-form input[type='password']:focus,
+form#kc-update-profile-form input[type='text']:focus,
+form#kc-update-profile-form input[type='password']:focus {
   border-bottom: 2px solid #ed1b2e;
 }
 form#kc-passwd-update-form input[type='text']:-webkit-autofill,
-form#kc-passwd-update-form input[type='password']:-webkit-autofill {
+form#kc-passwd-update-form input[type='password']:-webkit-autofill,
+form#kc-update-profile-form input[type='text']:-webkit-autofill,
+form#kc-update-profile-form input[type='password']:-webkit-autofill {
   box-shadow: 0 0 0px 1000px white inset;
 }
 
-.login-content .box input[type='submit'] {
+form#kc-passwd-update-form input[type='submit'],
+form#kc-update-profile-form input[type='submit'] {
   width: 320px;
   height: 36px;
   border-radius: 2px;
@@ -238,4 +260,8 @@ form#kc-passwd-update-form input[type='password']:-webkit-autofill {
   border-style: none;
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+.form-group {
+  margin-bottom: 20px;
 }
