@@ -48,8 +48,8 @@ body {
   font-stretch: normal;
   line-height: 0.83;
   letter-spacing: -0.4px;
-  text-align: left;
-  color: #0055b8;
+  text-align: center;
+  color: #ed1b2e;
   margin-left: 32px;
   margin-top: 40px;
 }
@@ -70,13 +70,13 @@ body {
   text-align: left;
   color: #000000;
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
   outline: none;
   background-color: #fff;
 }
 .login-content .box input[type='text']:focus,
 .login-content .box input[type='password']:focus {
-  border-bottom: 2px solid #0055b8;
+  border-bottom: 2px solid #ed1b2e;
 }
 .login-content .box input[type='text']:-webkit-autofill,
 .login-content .box input[type='password']:-webkit-autofill {
@@ -86,7 +86,7 @@ body {
   width: 320px;
   height: 36px;
   border-radius: 2px;
-  background-color: #00754a;
+  background-color: #ed1b2e;
   font-family: Muli;
   font-size: 14px;
   font-weight: bold;
@@ -100,6 +100,12 @@ body {
   margin-top: 60px;
   margin-bottom: 60px;
 }
+
+.login-content .box .submit:hover {
+  cursor: pointer;
+  background-color: rgb(221, 17, 36);
+}
+
 .login-content .box .visibility {
   position: relative;
   left: 296px;
@@ -147,7 +153,7 @@ body {
   line-height: 0.83;
   letter-spacing: -0.4px;
   text-align: left;
-  color: #0055b8;
+  color: #ed1b2e;
   margin-left: 32px;
   margin-top: 20px;
 }
@@ -177,4 +183,59 @@ body {
   font-family: Muli;
   font-size: 14px;
   margin-left: 30px;
+}
+
+.kc-info-message p {
+  font-size: 20px;
+  padding: 1rem;
+}
+
+.instruction {
+  font-size: 20px;
+  padding: 1rem;
+}
+
+form#kc-passwd-update-form input {
+  width: 320px;
+  height: 24px;
+  font-family: Muli;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #000000;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background-color: #fff;
+}
+
+form#kc-passwd-update-form input[type='text']:focus,
+form#kc-passwd-update-form input[type='password']:focus {
+  border-bottom: 2px solid #ed1b2e;
+}
+form#kc-passwd-update-form input[type='text']:-webkit-autofill,
+form#kc-passwd-update-form input[type='password']:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px white inset;
+}
+
+.login-content .box input[type='submit'] {
+  width: 320px;
+  height: 36px;
+  border-radius: 2px;
+  background-color: #ed1b2e;
+  font-family: Muli;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  border-style: none;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
