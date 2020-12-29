@@ -42,6 +42,13 @@ body {
   margin-right: auto;
   margin-top: 30px;
 }
+.login-content .box .kc-title {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 1.5rem;
+  font-family: 'Muli';
+}
+
 .login-content .box .application-name {
   width: 270px;
   font-family: Muli;
@@ -268,13 +275,12 @@ form#kc-update-profile-form input[type='submit'] {
   cursor: pointer;
 }
 
-.form-group {
-  margin-bottom: 20px;
+form#kc-passwd-update-form input[type='submit']:hover,
+form#kc-update-profile-form input[type='submit']:hover {
+  cursor: pointer;
+  background-color: rgb(221, 17, 36);
 }
 
-.kc-title {
-  text-align: center;
-  font-size: 25px;
-  padding-bottom: 1.5rem;
-  font-family: 'Muli';
+.form-group {
+  margin-bottom: 20px;
 }
