@@ -28,6 +28,8 @@ body {
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
   margin: auto;
+  position: relative;
+  padding-top: 30px;
 }
 .login-content .box .box-container {
   width: 100%;
@@ -145,12 +147,12 @@ body {
   text-align: left;
   color: #b8082a;
   border: 0px;
-  position: relative;
-  top: 180px;
+  position: absolute;
+  bottom: 120px;
   left: 64px;
   display: inline-flex;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1rem 0 0;
 }
 .identity-providers {
   width: 270px;
@@ -260,6 +262,7 @@ form#kc-update-profile-form input[type='submit'] {
   border-style: none;
   margin-top: 60px;
   margin-bottom: 60px;
+  cursor: pointer;
 }
 
 .form-group {

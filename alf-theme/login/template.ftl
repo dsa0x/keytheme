@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="robots" content="noindex, nofollow">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"/>
 
     <title><#nested "title"></title>
     <#if properties.styles?has_content>
@@ -16,7 +17,7 @@
 </head>
 
 	<body>
-        <#nested "header">
+        <div class="kc-title"><#nested "header"></div>
         <div class="login-content" style="background-image: url(&quot;${url.resourcesPath}/img/background.jpg&quot;);">
             <div class="box">
         <#if displayMessage && message?has_content>
