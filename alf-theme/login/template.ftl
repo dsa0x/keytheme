@@ -17,9 +17,10 @@
 </head>
 
 	<body>
-        <div class="kc-title"><#nested "header"></div>
+        
         <div class="login-content" style="background-image: url(&quot;${url.resourcesPath}/img/background.jpg&quot;);">
             <div class="box">
+            <div class="kc-title"><#nested "header"></div>
         <#if displayMessage && message?has_content>
         <div class="alert alert-${message.type}">
              <#if message.type = 'success'><span class="${properties.kcFeedbackSuccessIcon!}"></span></#if>
